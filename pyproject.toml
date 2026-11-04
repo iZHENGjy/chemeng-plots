@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chemeng-plots"
+version = "0.1.0"
+description = "Tested graphical-method plots for chemical engineering separations: ternary diagrams, stage stepping, leaching, drying, filtration, psychrometrics."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Zheng Jingyuan" }]
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "matplotlib>=3.5", "scipy>=1.8"]
+keywords = ["chemical-engineering", "separation-processes", "ternary-diagram",
+            "mccabe-thiele", "psychrometric-chart", "matplotlib", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Matplotlib",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.optional-dependencies]
+psychro = ["psychrolib>=2.5"]
+test = ["pytest>=7", "psychrolib>=2.5"]
+
+[project.urls]
+Repository = "https://github.com/iZHENGjy/chemeng-plots"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chemeng_plots"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
