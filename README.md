@@ -1,7 +1,7 @@
 # chemeng-plots
 
 [![tests](https://github.com/iZHENGjy/chemeng-plots/actions/workflows/tests.yml/badge.svg)](https://github.com/iZHENGjy/chemeng-plots/actions/workflows/tests.yml)
-![python](https://img.shields.io/badge/python-3.9%2B-blue)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 
 **Tested graphical-method plots for chemical engineering separations** — ternary diagrams, stage stepping, leaching, drying, filtration and psychrometrics in one call each.
